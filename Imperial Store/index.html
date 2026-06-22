@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperial Store</title>
+  <meta name="description" content="Imperial Store — cursos e conteúdos musicais com visual premium e carrinho integrado." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page">
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="./index.html" aria-label="Imperial Store">
+        <img src="./assets/Logo.jpg" alt="Imperial" class="brand-logo" />
+        <span class="brand-text">Imperial Store</span>
+      </a>
+      <nav class="nav desktop-nav" aria-label="Navegação principal">
+        <a href="#destaques">Destaques</a>
+        <a href="#produtos">Cursos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#suporte">Suporte</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="settingsBtn" aria-label="Abrir configurações">⚙</button>
+        <button class="icon-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <span>🛒</span>
+          <strong class="cart-badge" id="cartCount">0</strong>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação mobile">
+      <a href="#destaques">Destaques</a>
+      <a href="#produtos">Cursos</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#suporte">Suporte</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Conservatório Imperial • loja oficial demo</p>
+          <h1>Teoria musical, regência e prática em uma vitrine premium.</h1>
+          <p class="hero-text">
+            Uma página elegante para apresentar o curso <strong>Dominando a Teoria Musical</strong>, destacar os módulos, organizar o carrinho e abrir um suporte inteligente sem depender de API.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="./produto.html?produto=dominando-a-teoria-musical">Ver curso principal</a>
+            <button class="btn btn-light" data-open-support>Abrir suporte IA</button>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight">
+              <span class="highlight-value">Carrinho</span>
+              <span class="highlight-label">salva localmente</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">IA</span>
+              <span class="highlight-label">resposta offline</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">Tema</span>
+              <span class="highlight-label">luxo musical</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="hero-panel-top">
+            <span class="pill">Novo</span>
+            <span class="pill pill-soft">Dominando a Teoria Musical</span>
+          </div>
+          <div class="hero-showcase">
+            <img class="hero-cover" src="./assets/DominandoaTeoriaMusical.jpg" alt="Capa artística do curso Dominando a Teoria Musical" />
+          </div>
+          <div class="hero-panel-bottom">
+            <p class="panel-title">Curso com cara de marca grande</p>
+            <p class="panel-text">Visual inspirado em instrumentos, partituras e ambiente de conservatório.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Destaques">
+      <div class="ticker-track">
+        <span>Piano</span>
+        <span>Violão</span>
+        <span>Violino</span>
+        <span>Teoria musical</span>
+        <span>Harmonia</span>
+        <span>Regência</span>
+        <span>Prática</span>
+        <span>Leitura de partitura</span>
+        <span>Piano</span>
+        <span>Violão</span>
+        <span>Violino</span>
+        <span>Teoria musical</span>
+      </div>
+    </section>
+
+    <section class="section container" id="destaques">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Destaques</p>
+          <h2>Uma vitrine com foco no curso principal.</h2>
+        </div>
+        <a class="section-link" href="./produto.html?produto=dominando-a-teoria-musical">Abrir produto →</a>
+      </div>
+
+      <div class="feature-banner">
+        <div class="feature-banner-copy">
+          <p class="banner-kicker">Curso principal</p>
+          <h3>Dominando a Teoria Musical</h3>
+          <p>Uma landing page pensada para vender o curso com elegância, card de produto, CTA forte e suporte inteligente.</p>
+          <div class="banner-actions">
+            <a class="btn btn-dark" href="./produto.html?produto=dominando-a-teoria-musical">Comprar agora</a>
+            <button class="btn btn-light add-cart" data-name="Dominando a Teoria Musical" data-price="2.997,00">Colocar no carrinho</button>
+          </div>
+        </div>
+        <div class="feature-banner-visual">
+          <div class="mini-stack">
+            <div class="mini-card mini-card-1"></div>
+            <div class="mini-card mini-card-2"></div>
+            <div class="mini-card mini-card-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="produtos">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Cursos</p>
+          <h2>Cards prontos para abrir o produto em destaque.</h2>
+        </div>
+      </div>
+
+      <div class="category-strip">
+        <button class="chip active" data-filter="all">Cursos</button>
+      </div>
+
+      <div class="cards-grid">
+        <article class="product-card card" data-category="curso">
+          <a class="product-link" href="./produto.html?produto=dominando-a-teoria-musical">
+            <div class="product-visual cover-visual">
+              <img src="./assets/DominandoaTeoriaMusical.jpg" alt="Capa do curso Dominando a Teoria Musical" />
+            </div>
+            <div class="product-body">
+              <p class="tag">Curso</p>
+              <h3>Dominando a Teoria Musical</h3>
+              <p>Curso base para entender notas, escalas, intervalos, acordes e aplicação prática.</p>
+              <strong>Adicionar e abrir produto</strong>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="btn btn-dark" href="./produto.html?produto=dominando-a-teoria-musical">Abrir</a>
+            <button class="btn btn-light add-cart" data-name="Dominando a Teoria Musical" data-price="297">Carrinho</button>
+          </div>
+        </article>
+
+        <article class="product-card card" data-category="curso">
+          <a class="product-link" href="./produto.html?produto=dominando-os-ensaios-ccb">
+            <div class="product-visual cover-visual">
+              <img src="./assets/DominandoOsEnsaiosCCB.jpg" alt="Capa do curso Dominando Os Ensaios CCB" />
+            </div>
+            <div class="product-body">
+              <p class="tag">Curso</p>
+              <h3>Dominando Os Ensaios CCB</h3>
+              <p>Pacote de acompanhamento para organizar rotina, ensaios, dúvidas e evolução musical.</p>
+              <strong>Card demo</strong>
+            </div>
+          </a>
+          <div class="card-actions">
+            <button class="btn btn-dark add-cart" data-name="Dominando Os Ensaios CCB" data-price="97">Carrinho</button>
+            <a class="btn btn-light" href="./produto.html?produto=dominando-os-ensaios-ccb">Ver</a>
+          </div>
+        </article>
+
+        <article class="product-card card" data-category="curso">
+          <a class="product-link" href="./produto.html?produto=dominando-o-metronomo">
+            <div class="product-visual cover-visual">
+              <img src="./assets/Dominando-O-Metrônomo.jpg" alt="Capa do curso Dominando o Metrônomo" />
+            </div>
+            <div class="product-body">
+              <p class="tag">Curso</p>
+              <h3>Dominando o Metrônomo</h3>
+              <p>Material prático para desenvolver tempo, constância e precisão no estudo musical.</p>
+              <strong>Card demo</strong>
+            </div>
+          </a>
+          <div class="card-actions">
+            <button class="btn btn-dark add-cart" data-name="Dominando o Metrônomo" data-price="67">Carrinho</button>
+            <a class="btn btn-light" href="./produto.html?produto=dominando-o-metronomo">Ver</a>
+          </div>
+        </article>
+
+        <article class="product-card card" data-category="curso">
+          <a class="product-link" href="./produto.html?produto=formula-da-regencia-2-0">
+            <div class="product-visual cover-visual">
+              <img src="./assets/Formula-Da-Regencia-2.0.jpg" alt="Capa do curso Fórmula Da Regencia 2.0" />
+            </div>
+            <div class="product-body">
+              <p class="tag">Curso</p>
+              <h3>Formula Da Regencia 2.0</h3>
+              <p>Curso completo para aprender regência com clareza, técnica e aplicação prática.</p>
+              <strong>Card demo</strong>
+            </div>
+          </a>
+          <div class="card-actions">
+            <button class="btn btn-dark add-cart" data-name="Formula Da Regencia 2.0" data-price="0">Carrinho</button>
+            <a class="btn btn-light" href="./produto.html?produto=formula-da-regencia-2-0">Ver</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="beneficios">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Benefícios</p>
+          <h2>O site já vem com estrutura de venda completa.</h2>
+        </div>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit card">
+          <h3>Produto em card</h3>
+          <p>O clique abre a página do produto com visual próprio, resumo, módulos e botões.</p>
+        </div>
+        <div class="benefit card">
+          <h3>Carrinho local</h3>
+          <p>Adicionar remove e altera itens direto no navegador, sem backend.</p>
+        </div>
+        <div class="benefit card">
+          <h3>Suporte IA offline</h3>
+          <p>Uma experiência de chat que responde perguntas frequentes sem depender de API.</p>
+        </div>
+        <div class="benefit card">
+          <h3>Temática musical</h3>
+          <p>Partituras, notas, instrumentos e clima premium para combinar com o Imperial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="suporte">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Suporte</p>
+          <h2>Atendimento rápido em um painel simples.</h2>
+        </div>
+      </div>
+
+      <div class="support-layout">
+        <article class="support-card card">
+          <div class="support-head">
+            <div>
+              <p class="tag">Chat</p>
+              <h3>Assistente Imperial</h3>
+            </div>
+            <button class="choice-pill" data-open-support>Abrir</button>
+          </div>
+
+          <div class="chat-preview" id="chatPreview">
+            <div class="chat-bubble bot">Olá! Posso te ajudar com o curso, o carrinho, o acesso ao produto ou dúvidas sobre pagamento.</div>
+            <div class="chat-bubble user">Quero saber do curso principal.</div>
+            <div class="chat-bubble bot">Dominando a Teoria Musical aparece com card próprio e botão de compra na página do produto.</div>
+          </div>
+        </article>
+
+        <article class="support-card card">
+          <h3>Rotina da loja</h3>
+          <p>Explica módulos, mostra cards, mantém o carrinho e encaminha para a página certa.</p>
+          <div class="mini-facts">
+            <span>Teoria</span>
+            <span>Harmonia</span>
+            <span>Regência</span>
+            <span>Prática</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="callout card">
+        <div>
+          <p class="eyebrow">Pronto para publicar</p>
+          <h2>Imperial Store já nasce com cara de marca real.</h2>
+        </div>
+        <div class="callout-actions">
+          <a class="btn btn-dark" href="./produto.html?produto=dominando-a-teoria-musical">Abrir curso</a>
+          <button class="btn btn-light" data-open-cart>Ver carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="./assets/Logo.jpg" alt="Imperial" class="footer-logo" />
+          <span>Imperial Store</span>
+        </div>
+        <p>Vitrine demo inspirada no universo musical do Conservatório Imperial.</p>
+      </div>
+
+      <div>
+        <h4>Explorar</h4>
+        <a href="#destaques">Destaques</a>
+        <a href="#produtos">Cursos</a>
+        <a href="#beneficios">Benefícios</a>
+      </div>
+
+      <div>
+        <h4>Suporte</h4>
+        <a href="#suporte">Assistente</a>
+        <a href="./produto.html?produto=dominando-a-teoria-musical">Produto</a>
+        <button class="text-btn" data-open-cart>Carrinho</button>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <p>Site demo</p>
+        <p>Brasil</p>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Seu carrinho</h3>
+      <button class="drawer-close" data-close="cartDrawer" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-footer">
+      <div class="drawer-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0</strong>
+      </div>
+      <button class="btn btn-dark full" id="checkoutBtn">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div class="overlay" data-close="cartDrawer"></div>
+
+  <aside class="drawer settings-drawer" id="settingsDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Configurações</h3>
+      <button class="drawer-close" data-close="settingsDrawer" aria-label="Fechar configurações">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div class="setting-block">
+        <p class="setting-label">Tema</p>
+        <div class="setting-row">
+          <button class="choice-pill active" data-theme-choice="dark">Escuro</button>
+          <button class="choice-pill" data-theme-choice="light">Claro</button>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <p class="setting-label">Destaque</p>
+        <div class="setting-row">
+          <button class="accent-swatch active" data-accent="#c8a969" style="--swatch:#c8a969"></button>
+          <button class="accent-swatch" data-accent="#22c55e" style="--swatch:#22c55e"></button>
+          <button class="accent-swatch" data-accent="#8b5cf6" style="--swatch:#8b5cf6"></button>
+          <button class="accent-swatch" data-accent="#38bdf8" style="--swatch:#38bdf8"></button>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <p class="setting-label">Animações</p>
+        <label class="toggle">
+          <input type="checkbox" id="motionToggle" checked />
+          <span>Ativar animações</span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <div class="overlay" data-close="settingsDrawer"></div>
+
+  <section class="support-panel" id="supportPanel" aria-hidden="true">
+    <div class="support-panel-head">
+      <div>
+        <p class="tag">IA de suporte</p>
+        <h3>Assistente Imperial</h3>
+      </div>
+      <button class="drawer-close" id="closeSupport" aria-label="Fechar suporte">✕</button>
+    </div>
+    <div class="support-panel-body" id="supportMessages">
+      <div class="msg bot">Oi! Pergunta sobre o curso, o carrinho, pagamento ou produto.</div>
+    </div>
+    <form class="support-form" id="supportForm">
+      <input id="supportInput" type="text" placeholder="Ex.: preço, módulos, carrinho..." autocomplete="off" />
+      <button class="btn btn-dark" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

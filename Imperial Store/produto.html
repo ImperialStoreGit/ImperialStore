@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperial Store — Produto</title>
+  <meta name="description" content="Página do produto Imperial Store com card, carrinho e suporte IA offline." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page product-page">
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="./index.html" aria-label="Imperial Store">
+        <img src="./assets/logo.svg" alt="Imperial" class="brand-logo" />
+        <span class="brand-text">Imperial Store</span>
+      </a>
+
+      <nav class="nav desktop-nav" aria-label="Navegação principal">
+        <a href="./index.html#destaques">Destaques</a>
+        <a href="./index.html#produtos">Cursos</a>
+        <a href="./index.html#suporte">Suporte</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-btn" id="settingsBtn" aria-label="Abrir configurações">⚙</button>
+        <button class="icon-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <span>🛒</span>
+          <strong class="cart-badge" id="cartCount">0</strong>
+        </button>
+        <a class="menu-btn menu-link" href="./index.html" aria-label="Voltar ao início">⌂</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container product-shell">
+    <section class="product-hero card">
+      <div class="product-hero-media">
+        <img id="productCover" src="./assets/cover-dominando.svg" alt="Capa do produto" />
+      </div>
+
+      <div class="product-hero-copy">
+        <p class="eyebrow" id="productCategory">Curso principal</p>
+        <h1 id="productTitle">Dominando a Teoria Musical</h1>
+        <p class="hero-text" id="productDescription">
+          Curso completo para entender teoria musical de forma clara, visual e prática.
+        </p>
+
+        <div class="price-row">
+          <strong id="productPrice">R$ 297</strong>
+          <span id="productHint">Compra demo com botão de carrinho e link externo.</span>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn btn-dark add-cart" id="buyNowBtn" data-name="Dominando a Teoria Musical" data-price="297">Comprar / carrinho</button>
+          <a class="btn btn-light" href="./index.html#suporte">Abrir suporte</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight">
+            <span class="highlight-value">Teoria</span>
+            <span class="highlight-label">notas, escalas e acordes</span>
+          </div>
+          <div class="highlight">
+            <span class="highlight-value">Prática</span>
+            <span class="highlight-label">aplicação em instrumentos</span>
+          </div>
+          <div class="highlight">
+            <span class="highlight-value">Local</span>
+            <span class="highlight-label">carrinho sem API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-grid">
+      <article class="card content-card">
+        <p class="eyebrow">O que tem dentro</p>
+        <h2>Módulos que deixam o produto com cara de curso completo.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>Fundamentos</h3>
+              <p>Notas, claves, figuras, compassos e leitura musical.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Harmonia</h3>
+              <p>Escalas, intervalos, tríades e formação de acordes.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Aplicação</h3>
+              <p>Exercícios para teclado, violão, violino, canto e regência.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card content-card">
+        <p class="eyebrow">Resumo</p>
+        <h2>Card de produto com compra e carrinho.</h2>
+        <p>
+          O layout abre em uma página própria, mas mantém a navegação rápida para a loja, carrinho e chat de suporte.
+        </p>
+        <ul class="bullet-list">
+          <li>Botão de comprar</li>
+          <li>Botão de adicionar ao carrinho</li>
+          <li>Suporte IA embutido</li>
+          <li>Visual premium musical</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Outros cards</p>
+          <h2>Produtos relacionados dentro da mesma identidade.</h2>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="product-card card">
+          <div class="product-visual note-visual">
+            <span>♪</span>
+          </div>
+          <div class="product-body">
+            <p class="tag">Apoio</p>
+            <h3>Mentoria de Harmonia</h3>
+            <p>Pacote de acompanhamento para dúvidas e rotina de estudo.</p>
+            <strong>R$ 97</strong>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-dark add-cart" data-name="Mentoria de Harmonia" data-price="97">Carrinho</button>
+            <a class="btn btn-light" href="./index.html#produtos">Voltar</a>
+          </div>
+        </article>
+
+        <article class="product-card card">
+          <div class="product-visual instrument-visual">
+            <span>🎼</span>
+          </div>
+          <div class="product-body">
+            <p class="tag">Kit</p>
+            <h3>Kit Partitura Imperial</h3>
+            <p>Guias, partituras e organização para o estudo musical.</p>
+            <strong>R$ 67</strong>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-dark add-cart" data-name="Kit Partitura Imperial" data-price="67">Carrinho</button>
+            <a class="btn btn-light" href="./index.html#produtos">Voltar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout card">
+        <div>
+          <p class="eyebrow">Suporte rápido</p>
+          <h2>Precisa de uma resposta agora?</h2>
+        </div>
+        <div class="callout-actions">
+          <button class="btn btn-dark" data-open-support>Abrir assistente</button>
+          <a class="btn btn-light" href="./index.html">Ir para loja</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-simple">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="./assets/logo.svg" alt="Imperial" class="footer-logo" />
+          <span>Imperial Store</span>
+        </div>
+        <p>Página de produto demo com foco em conversão.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="./index.html#destaques">Destaques</a>
+        <a href="./index.html#suporte">Suporte</a>
+        <a href="./index.html#beneficios">Benefícios</a>
+      </div>
+      <div>
+        <h4>Loja</h4>
+        <a href="./index.html#produtos">Cursos</a>
+        <button class="text-btn" data-open-cart>Carrinho</button>
+        <button class="text-btn" data-open-support>Chat IA</button>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>Brasil</p>
+        <p>Site demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Seu carrinho</h3>
+      <button class="drawer-close" data-close="cartDrawer" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-footer">
+      <div class="drawer-total">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0</strong>
+      </div>
+      <button class="btn btn-dark full" id="checkoutBtn">Finalizar compra</button>
+    </div>
+  </aside>
+  <div class="overlay" data-close="cartDrawer"></div>
+
+  <aside class="drawer settings-drawer" id="settingsDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Configurações</h3>
+      <button class="drawer-close" data-close="settingsDrawer" aria-label="Fechar configurações">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="setting-block">
+        <p class="setting-label">Tema</p>
+        <div class="setting-row">
+          <button class="choice-pill active" data-theme-choice="dark">Escuro</button>
+          <button class="choice-pill" data-theme-choice="light">Claro</button>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <p class="setting-label">Destaque</p>
+        <div class="setting-row">
+          <button class="accent-swatch active" data-accent="#c8a969" style="--swatch:#c8a969"></button>
+          <button class="accent-swatch" data-accent="#22c55e" style="--swatch:#22c55e"></button>
+          <button class="accent-swatch" data-accent="#8b5cf6" style="--swatch:#8b5cf6"></button>
+          <button class="accent-swatch" data-accent="#38bdf8" style="--swatch:#38bdf8"></button>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <p class="setting-label">Animações</p>
+        <label class="toggle">
+          <input type="checkbox" id="motionToggle" checked />
+          <span>Ativar animações</span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <div class="overlay" data-close="settingsDrawer"></div>
+
+  <section class="support-panel" id="supportPanel" aria-hidden="true">
+    <div class="support-panel-head">
+      <div>
+        <p class="tag">IA de suporte</p>
+        <h3>Assistente Imperial</h3>
+      </div>
+      <button class="drawer-close" id="closeSupport" aria-label="Fechar suporte">✕</button>
+    </div>
+
+    <div class="support-panel-body" id="supportMessages">
+      <div class="msg bot">Oi! Pergunta sobre o curso, o carrinho, pagamento ou produto.</div>
+    </div>
+
+    <form class="support-form" id="supportForm">
+      <input id="supportInput" type="text" placeholder="Ex.: preço, módulos, carrinho..." autocomplete="off" />
+      <button class="btn btn-dark" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

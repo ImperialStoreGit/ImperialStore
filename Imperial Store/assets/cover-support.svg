@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="bg4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0e1422"/>
+      <stop offset="1" stop-color="#06080d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" rx="52" fill="url(#bg4)"/>
+  <circle cx="500" cy="390" r="160" fill="none" stroke="#38bdf8" stroke-width="18"/>
+  <path d="M430 390h140M500 320v140" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M500 560c-130 0-245 55-300 138 70 34 161 54 300 54s230-20 300-54c-55-83-170-138-300-138z" fill="rgba(56,189,248,.14)" stroke="#38bdf8" stroke-width="10"/>
+  <text x="500" y="850" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" fill="#f5f1ea">Assistente Imperial</text>
+</svg>
